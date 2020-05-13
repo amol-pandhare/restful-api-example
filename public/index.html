@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <title>Notes Admin</title>
+    </head>
+    <body>
+        <p>Restful Form for Notes</p>
+
+        <form id="user_form">
+            <fieldset>
+                <label>==Get Notes==</label><br />
+                <input id="noteID" name="noteID" type="text" placeholder="note ID"/>
+                <button id="getButton" name="getButton" value="submit" type="submit">Submit</button>
+            </fieldset>
+        </form>
+
+        <form id="post_form">
+            <fieldset>
+                <label>==POST==</label><br />
+                <label>Note title</label>
+                <input id="noteTitle" name="noteTitle" type="text" placeholder="note title"/>
+                <label>Note Content</label>
+                <input id="noteContent" name="noteContent" type="text" placeholder="note content"/>
+                <button id="postButton" name="postButton" value="submit" type="submit">Post</button>
+            </fieldset>
+        </form>
+
+        <form id="del_form">
+            <fieldset>
+                <label>==DELETE Note==</label><br />
+                <label>Note ID</label>
+                <input id="noteID" name="noteID" type="text" placeholder="note ID"/>
+               <button id="delButton" name="delButton" value="submit" type="submit">Delete</button>
+            </fieldset>
+        </form>
+
+        <form id="update_form">
+            <fieldset>
+                <label>==UPDATE Note==</label><br />
+                <label>Note ID</label>
+                <input id="noteID" name="noteID" type="text" placeholder="note ID"/><br />
+                <label>Note title</label>
+                <input id="noteTitle" name="noteTitle" type="text" placeholder="note title"/>
+                <label>Note Content</label>
+                <input id="noteContent" name="noteContent" type="text" placeholder="note content"/>
+                <button id="updateButton" name="updateButton" value="submit" type="submit">Update</button>
+            </fieldset>
+        </form>
+
+        <p>List of Notes:</p>
+        <div id="results"></div>
+
+        <script src="./api.js"></script>
+    </body>
+</html>
